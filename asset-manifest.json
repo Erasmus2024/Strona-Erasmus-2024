@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/strona-erasmus-2024/static/css/main.5987f5cb.css",
+    "main.js": "/strona-erasmus-2024/static/js/main.edf3831d.js",
+    "static/media/malaga-hero.png": "/strona-erasmus-2024/static/media/malaga-hero.0f4b73a77b16876e617a.png",
+    "index.html": "/strona-erasmus-2024/index.html",
+    "main.5987f5cb.css.map": "/strona-erasmus-2024/static/css/main.5987f5cb.css.map",
+    "main.edf3831d.js.map": "/strona-erasmus-2024/static/js/main.edf3831d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5987f5cb.css",
+    "static/js/main.edf3831d.js"
+  ]
+}
