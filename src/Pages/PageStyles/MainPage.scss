@@ -110,3 +110,50 @@
   background-color: rgba(0, 51, 102, 0.5);
   z-index: 1;
 }
+
+.about {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 2vh;
+  padding: 0 1vw;
+}
+
+.description-title {
+  display: inline-block;
+  width: 61%;
+  color: #ffa500;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: start;
+  border-bottom: 2px solid #003366;
+}
+
+.description-text-image {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+    &.reverse {
+      flex-flow: row-reverse nowrap;
+    }
+
+    & .description-text {
+      width: 50%;
+      text-align: justify;
+      text-justify: inter-word;
+      color: #003366;
+    }
+}
+
+.description-image {
+  border-radius: 25%;
+  width: 40vw;
+  height: 25vw;
+}
