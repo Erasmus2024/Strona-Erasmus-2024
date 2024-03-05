@@ -1,42 +1,62 @@
 [
         {
-            "author": "John Doe 1",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Dawid Zbożniak",
+            "occupation":"technik programista",
+            "content": "Cześć! Biorę udział w projekcie stażu zagranicznego do Malagi, ponieważ chcę poszerzyć swoje umiejętności i doświadczenie jako programista. Chcę się nauczyć nowych technologii i narzędzi, które są używane w branży IT. Interesuje mnie zwłaszcza programowanie webowe i mobilne, a także sztuczna inteligencja. Chcę również poprawić swój poziom języka hiszpańskiego i angielskiego, które mogą okazać się przydatne w pracy programisty. Z projektu stażu zagranicznego do Malagi chcę wyciągnąć jak najwięcej korzyści dla mojego rozwoju osobistego i zawodowego. Liczę na to, że zdobędę cenne doświadczenie, które zwiększy moje szanse na rynku pracy."
         },
         {
-            "author": "John Doe 2",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Michał Mikuła",
+            "occupation":"technik programista",
+            "content": "W Erasmusie widzę szansę na zwiększenie moich kompetencji zawodowych związanych z programowaniem, udoskonalenie umiejętności pracy zespołowej, wspólnie pracując nad stażowym projektem, ćwiczenie posługiwania się językiem angielskim w zawodzie, pracując ze specjalistami z innych krajów Unii Europejskiej oraz na zdobycie nowej wiedzy powiązanej z dobrą zabawą w dziedzinach, których do tej pory nie odkrywałem na własną rękę. Poza aspektami czysto zawodowymi również z radością dostrzegam w tym stażu okazję do poznania zupełnie nowej kultury, języka i obyczajów, jakie panują w Hiszpanii oraz odkrycie jej piękna poprzez różne wyjazdy czy wyprawy, zachwycając się tutejszymi widokami, klimatem oraz zabytkami."
         },
         {
-            "author": "John Doe 3",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Szymon Seklecki",
+            "occupation":"technik informatyk",
+            "content": "Biorę udział w projekcie Erasmus+ z wielu różnorodnych powodów. Pierwszorzędnym powodem jest ogromna chęć rozwoju językowo-kulturowego, poznanie prawdziwego życia pracownika-stażysty za granicą. Wyjazd na staż zagraniczny jest również szansą na integrację wśród ludzi. Podczas projektu chciałbym pogłębić swoje umiejętności techniczno-informatyczne oraz komunikatywne w językach obcych. Chciałbym także stworzyć niezapomniane wspomnienia z obowiązkowych działań oraz z możliwości zwiedzania urokliwego kraju jakim jest Hiszpania. Liczę na ciepłe i miłe przyjęcie w Maladze, na przyjazne środowisko pracy oraz na motywujące wsparcie mentorów. Nie mogę doczekać się efektów naszej współpracy! "
         },
         {
-            "author": "John Doe 4",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Jakub Wróbel",
+            "occupation":"technik elektronik",
+            "content": "Biorę udział w tym projekcie, ponieważ chcę rozwinąć swoje praktyczne umiejętności, umiejętności językowe, głównie w zakresie języka hiszpańskiego, oraz lepiej poznać kulturę Hiszpanii. Chciałbym poszerzyć swoje horyzonty związane z tematyką zawodową projektu, rozwinąć się interpersonalnie jak i również poznać trochę Malagi i okolic. Liczę na miłe spędzenie czasu biorąc udział w tym projekcie, zawarcie nowych kontaktów, które mogą w przyszłości otworzyć mi drogę do pracy w środowisku międzynarodowym. Jestem dumny i bardzo się cieszę, że mogę brać udział w tym projekcie."
         },
         {
-            "author": "John Doe 5",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Marcin Mikuła",
+            "occupation":"technik programista",
+            "content": "Staż zawodowy w ramach projektu Erasmus to mój pierwszy wyjazd za granicę w celach innych niż rekreacyjne i pierwszy wyjazd do Hiszpanii. Mam nadzieję, że staż pozwoli mi na zgłębienie hiszpańskiej kultury i poznanie nowych ludzi. Liczę też na to, że staż pozwoli mi na odkrycie zasad panujących w pracy jako progamista i zdobycie cennego doświadczenia zawodowego na przyszłość."
         },
         {
-            "author": "John Doe 6",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Jan Tokarz",
+            "occupation":"technik programista",
+            "content": "Od projektu oczekuję w szczególności dania możliwości pozyskania wiedzy w zakresie zagadnień zawartych w programie stażu, czyli w tym przypadku podstaw tworzenia gier z użyciem silnika Unreal Engine oraz projektowania modeli 3D. Mam również nadzieję, że projekt pozwoli nam na lepsze poznanie tamtejszej kultury poprzez różne aktywności kulturalne, a także przybliży nam realia pracy w naszym zawodzie oraz da nam możliwość wypracowania własnego trybu pracy i rozwinięcia zdolności komunikacyjnych przy pracy w zagranicznej firmie. Z projektu poza wiedzą chciałbym wynieść dużo pozytywnych doświadczeń i mam nadzieję, że do ich pozyskiwania będą utworzone odpowiednie warunki oraz zachowany zostanie odpowiedni komfort życia i pracy."
         },
         {
-            "author": "John Doe 7",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Karolina Jaromin",
+            "occupation":"technik programista",
+            "content": "Biorę udział w projekcie erasmus+ ze względu na możliwość poznania nowej, ciekawej kultury oraz ludzi. Chciałabym rozwinąć swoje umiejętności w zakresie programowania obiektowego. Myślę, że dzięki temu projektowi uzyskam wiele korzyści - nowe znajomości, nowe umiejętności oraz ciekawe doświadczenia. Liczę na to, że podczas projektu nie będę się nudzić, zwiedzę wiele ciekawych miejsc oraz poznam wiele ciekawych osób, a z kolegami i koleżankami, którzy biorą w projekcie udział razem ze mną zacieśnię więzi."
         },
         {
-            "author": "John Doe 8",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Filip Flak",
+            "occupation":"technik programista",
+            "content": "Na stażu Erasmus+ mam nadzieję na głębsze poznanie sektora IT i osób w nim pracujących, które posiadają specjalistyczną wiedzę na temat technologii i aktualnych trendów na rynku pracy. W tym czasie pragnę udoskonalić moje umiejętności programistyczne, pracy w zespole jak również poznać Hiszpanię i jej kulturę, a także poszerzyć moje zainteresowania związane z informatyką i nie tylko. Wierzę że dzięki temu zdołam poszerzyć swoje kompetencję by w przyszłości być jak najlepiej przygotowanym do wejścia na stawiający coraz to inne wyzwania, dynamiczny rynek pracy oraz spełniać swoje marzenia i cele."
         },
         {
-            "author": "John Doe 9",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Dawid Trzcionka",
+            "occupation":"technik programista",
+            "content": "Oczekuję, że staż zagraniczny ERASMUS w Maladze w Hiszpanii znacząco rozwinie moje umiejętności programistyczne dzięki intensywnym kursom. Mam nadzieję na zdobycie praktycznej wiedzy, która będzie fundamentem do dalszego rozwoju w branży IT. Chcę również zanurzyć się w kulturze hiszpańskiej, poprawić znajomość języka hiszpańskiego, nawiązać międzynarodowe kontakty, które mogą okazać się cenne w przyszłej karierze. Liczę na wymianę doświadczeń z innymi uczestnikami programu, co pozwoli mi na szerzenie horyzontów myślenia i spojrzenie na programowanie z różnych perspektyw. Staż ten widzę jako szansę na rozwój osobisty i zawodowy w międzynarodowym środowisku."
         },
         {
-            "author": "John Doe 10",
-            "content": "lorem ipsum dolor sir amet"
+            "author": "Piotr Jakóbczyk",
+            "occupation":"technik programista",
+            "content": "Dla mnie Erasmus+ jest przede wszystkim okazją do wczucia się w miejscowy klimat, do takiego życia, jakie wiódłby Hiszpan, do zobaczenia tamtej perspektywy taką jaka jest naprawdę, bez szczelnie nałożonych różowych okularów turyzmu. Dzięki temu, że projekt ten jest bliższy wyjazdowi zarobkowemu niż wakacyjnemu, będę mógł ulec pełnej immersji - od korzystania z komunikacji miejskiej aby się dostać do miejsca pracy, aż po samodzielne odkrywanie miasta, co z pewnością zamierzam w wolnym czasie robić."
+        },
+        {
+            "author": "Wojciech Wyrwas",
+            "occupation":"technik informatyk",
+            "content": "Erasmus z pewnością będzie dla nas szansą na zdobycie wiedzy z zakresu rzeczy, których obecnie nie mielibyśmy opcji doświadczyć. Umiejętności pracy w szerszej grupie i praktycznego korzystania z języka innego niż ojczysty nie są wystarczająco rozwijane w szkołach, gdzie są ograniczane do kilku prezentacji i nauki języków obcych tylko w zakresie opisanym w programie nauczania. Moje oczekiwania wobec projektu zawierają więc między innymi nadzieję, że w czasie naszego pobytu w Maladze posiąziemy praktyczną wiedzę, którą będziemy mogli wykorzystać w przyszłym zatrudnieniu i współpracy z osobami z zagranicy."
+        },
+        {
+            "author": "Marta Biała",
+            "occupation":"technik programista",
+            "content": "Biorę udział w tym projekcie, ponieważ lubię się rozwijać i uważam, że rozwój osobisty to jedna z najważniejszych wartości, w którą możemy inwestować. Podczas tego projektu chciałabym rozwinąć swoje umiejętności programistyczne oraz poznać nowe technologie, w których nie miałam jeszcze okazji pracować. Mam nadzieję, że umożliwi mi to korzystanie z nich w przyszłości oraz dalszy rozwój. Bardzo lubię też podróżować, poznawać nowych ludzi i zbierać nowe doświadczenia i pokonywać nowe wyzwania, więc bardzo się cieszę, że mogę brać w tym udział."
         }
 ]
