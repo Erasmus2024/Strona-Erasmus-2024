@@ -41,7 +41,7 @@ const MainPage: React.FC = () => {
           <a href='/' className='navbar-menu-item'>
             Strona główna
           </a>
-          <a href='/' className='navbar-menu-item'>
+          <a href='#o-projekcie' className='navbar-menu-item'>
             O projekcie
           </a>
           <a href='/' className='navbar-menu-item'>
@@ -59,10 +59,10 @@ const MainPage: React.FC = () => {
             <span id='hero-second-element'>Malaga, 2024</span>
           </div>
           <div className='hero-menu'>
-            <a href='/' className='hero-menu-item'>
+            <a href='#o-projekcie' className='hero-menu-item'>
               O projekcie
             </a>
-            <a href='/' className='hero-menu-item'>
+            <a href='#oczekiwania' className='hero-menu-item'>
               Oczekiwania uczestników
             </a>
             <a href='/' className='hero-menu-item'>
@@ -76,7 +76,7 @@ const MainPage: React.FC = () => {
         </div>
       </section>
       <section className='about'>
-        <div className='description'>
+        <div className='description' id="o-projekcie">
           <span className='description-title'>
             Projekt Erasmus+ 2024 w Maladze
           </span>
@@ -101,7 +101,7 @@ Poprzez wspólne projekty i inicjatywy, Erasmus+ 2024 ma na celu budowanie trwa�
             </div>
           </div>
         </div>
-        <div className='description expectations'>
+        <div className='description expectations' id="oczekiwania">
           <span className='description-title'>
             Nasze oczekiwania względem projektu
           </span>
