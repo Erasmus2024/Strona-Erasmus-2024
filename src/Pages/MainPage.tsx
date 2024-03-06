@@ -64,7 +64,7 @@ const MainPage: React.FC = () => {
             <a href='#oczekiwania' className='hero-menu-item'>
               Oczekiwania uczestników
             </a>
-            <a href='/' className='hero-menu-item'>
+            <a href='#przebieg' className='hero-menu-item'>
               Przebieg projektu
             </a>
 
@@ -120,6 +120,81 @@ Poprzez wspólne projekty i inicjatywy, Erasmus+ 2024 ma na celu budowanie trwa�
                   ))
                 }
               </div>
+          </div>
+        </div>
+        <div className='description process' id="przebieg">
+          <span className='description-title'>
+            Przebieg projektu
+          </span>
+          <div className='description-content'>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Lp.</th>
+                      <th>Opis działania</th>
+                      <th>Data</th>
+                      <th>Dodatkowe informacje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Spotkanie informacyjne dla klas IV, rozpoczęcie rekrutacji.</td>
+                      <td>16.11.2023</td>
+                      <td>
+                        <a href="https://tiny.pl/cvzk5" target='_blank' rel="noreferrer" className='link-button'>
+                          <span className="label">Przejdź</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+</svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>II etap rekrutacji - test z języka angielskiego.</td>
+                      <td>08.12.2023</td>
+                      <td>
+                        <a href="https://tiny.pl/cvzkc" target='_blank' rel="noreferrer" className='link-button'>
+                          <span className="label">Przejdź</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+</svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Ogłoszenie wyników rekrutacji</td>
+                      <td>12.12.2023</td>
+                      <td>
+                        <a href="https://zse.edu.pl/news/1066/erasmus-wyniki-rekrutacji" target='_blank' rel="noreferrer" className='link-button'>
+                          <span className="label">Przejdź</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="16" height="16" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+</svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Spotkanie z firmą przyjmującą z Malagi – przygotowanie kulturowe.</td>
+                      <td>21.02.2024</td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>Przygotowanie do stażu – kursy języka angielskiego i hiszpańskiego.</td>
+                      <td>22.02.2024 - 29.03.2024</td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
           </div>
         </div>
       </section>
