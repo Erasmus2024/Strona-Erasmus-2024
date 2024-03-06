@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Strona-Erasmus-2024/static/css/main.18a4303c.css",
-    "main.js": "/Strona-Erasmus-2024/static/js/main.0db7c637.js",
-    "static/media/connection.jpg": "/Strona-Erasmus-2024/static/media/connection.0179e9b02c5d892a3df8.jpg",
-    "static/media/working.jpg": "/Strona-Erasmus-2024/static/media/working.2c13869382ba50db8533.jpg",
+    "main.css": "/Strona-Erasmus-2024/static/css/main.c668ebdf.css",
+    "main.js": "/Strona-Erasmus-2024/static/js/main.e5d5d199.js",
     "static/media/malaga-hero.png": "/Strona-Erasmus-2024/static/media/malaga-hero.0f4b73a77b16876e617a.png",
+    "static/media/working2.jpg": "/Strona-Erasmus-2024/static/media/working2.b7019402bf48d3db7c6e.jpg",
     "static/media/logo_mobility_alpha.png": "/Strona-Erasmus-2024/static/media/logo_mobility_alpha.c7c9e15ad722377d7848.png",
+    "static/media/erasmus.jpg": "/Strona-Erasmus-2024/static/media/erasmus.e98f78d21be740770702.jpg",
+    "static/media/malaga.jpeg": "/Strona-Erasmus-2024/static/media/malaga.5a283179dfc2a1b13d5c.jpeg",
     "static/media/ue.png": "/Strona-Erasmus-2024/static/media/ue.ef4b0e1aec10c37ef0f2.png",
-    "static/media/malaga-landscape.webp": "/Strona-Erasmus-2024/static/media/malaga-landscape.6d60ac5898b5b80d7be0.webp",
     "static/media/elektronik.png": "/Strona-Erasmus-2024/static/media/elektronik.9398c99cb2046aefcfba.png",
     "index.html": "/Strona-Erasmus-2024/index.html",
-    "main.18a4303c.css.map": "/Strona-Erasmus-2024/static/css/main.18a4303c.css.map",
-    "main.0db7c637.js.map": "/Strona-Erasmus-2024/static/js/main.0db7c637.js.map"
+    "main.c668ebdf.css.map": "/Strona-Erasmus-2024/static/css/main.c668ebdf.css.map",
+    "main.e5d5d199.js.map": "/Strona-Erasmus-2024/static/js/main.e5d5d199.js.map"
   },
   "entrypoints": [
-    "static/css/main.18a4303c.css",
-    "static/js/main.0db7c637.js"
+    "static/css/main.c668ebdf.css",
+    "static/js/main.e5d5d199.js"
   ]
 }
