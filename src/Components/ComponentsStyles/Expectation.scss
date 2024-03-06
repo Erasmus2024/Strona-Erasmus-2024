@@ -10,12 +10,21 @@
     padding-top: 3vh;
     box-shadow: 0px 0px 8px #003366;
 
+    position: relative;
+    top: 0px;
+    transition: top .2s, box-shadow .2s;
+
     &:nth-of-type(1) {
         margin-left: 0;
     }
 
     &:nth-last-of-type(1) {
         margin-right: 0;
+    }
+
+    &:hover {
+        top: -3px;
+        box-shadow: 0px 0px 8px 1px #003366;
     }
 
     .author-block {
