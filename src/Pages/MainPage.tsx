@@ -46,7 +46,7 @@ const MainPage: React.FC = () => {
           <a href='#o-projekcie' className='navbar-menu-item'>
             O projekcie
           </a>
-          <a href='/' className='navbar-menu-item'>
+          <a href='#lista-uczniow' className='navbar-menu-item'>
             Lista uczesników
           </a>
           <a href='/' className='navbar-menu-item'>
@@ -196,6 +196,33 @@ Poprzez wspólne projekty i inicjatywy, Erasmus+ 2024 ma na celu budowanie trwa�
                       <td>
                       </td>
                     </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+        <div className='description attendees' id="lista-uczniow">
+          <span className='description-title'>
+            Lista uczestników
+          </span>
+          <div className='description-content'>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Lp.</th>
+                      <th>Imię i nazwisko</th>
+                      <th>Kierunek</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {
+                      Expectations.map((expectation, index) => (
+                        <tr>
+                          <td>{index+1}</td>
+                          <td>{expectation.author}</td>
+                          <td>{expectation.occupation}</td>
+                        </tr>
+                      ))
+                    }
                   </tbody>
                 </table>
           </div>
