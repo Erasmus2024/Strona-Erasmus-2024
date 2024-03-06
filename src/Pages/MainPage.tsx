@@ -1,4 +1,4 @@
-import React, { Dispatch, Ref, SetStateAction, useRef, useState } from 'react';
+import React, { Dispatch, Ref, SetStateAction, useRef, useState, useEffect } from 'react';
 import './PageStyles/MainPage.scss';
 import Expectations from '../Expectations.json';
 import Expectation from '../Components/Expectation';
@@ -8,9 +8,22 @@ import LogoMobility from '../images/logo_mobility_alpha.png';
 import MalagaFirstPhoto from '../images/malaga.jpeg';
 import Working2 from '../images/working2.jpg';
 import Erasmus from '../images/erasmus.jpg';
+
 const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
   const [expectationsListLeft, setExpectationsListLeft]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setShadow(isScrolled);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const MoveLeft: () => void = () => {
     if (expectationsListLeft > (Expectations.length - 3) * 33 * -1) {
@@ -31,7 +44,7 @@ const MainPage: React.FC = () => {
 
   return (
     <div className='container'>
-      <nav className='main-navbar'>
+      <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''}`}>
         <div className='navbar-logo'>
           <span className='navbar-logo-first-element'>Erasmus+ 2024 | </span>
           <span className='navbar-logo-second-element'>Hiszpania</span>
