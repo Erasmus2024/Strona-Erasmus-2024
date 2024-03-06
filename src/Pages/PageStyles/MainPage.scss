@@ -209,7 +209,7 @@
 }
 
 .process {
-  margin-top: 5vh;
+  margin: 5vh 0;
   padding: 0;
 
   .description-title {
@@ -291,6 +291,83 @@
           font-weight: 500;
         }
       }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to top right, #003366 60%, #0066cc);
+  padding: 2vh 0;
+  border-radius: 3% 3% 0 0;
+
+  .project-details-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .project-details {
+      color:white;
+      margin-top: 2vh;
+    }
+
+    .partners {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+
+      img {
+        height: 12vh;
+      }
+    }
+  }
+
+  .authors-social-media {
+    margin-top: 4vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .authors {
+      height: 5vh;
+      color: white;
+
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-grow: 1;
+
+        .closure {
+          font-weight: 500;
+        }
+    }
+
+    .social-media {
+        width: 10vw;
+        height: 5vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2vw;
+
+        .link {
+          margin: 0 0.5vw;
+          .fb, .youtube {
+            height: 5vh;
+            fill: white;
+          }
+        }
     }
   }
 }
