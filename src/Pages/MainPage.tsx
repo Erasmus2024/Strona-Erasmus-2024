@@ -285,7 +285,10 @@ const MainPage: React.FC = () => {
         <div className='authors-social-media'>
           <div className='authors'>
             <span>Stronę przygotowali: Michał Mikuła, Kamil Marczak</span>
-            <span className='closure'>Materiały na stronie udostępnione na zasadzie licencji Creative Commons.</span>
+            <span className='closure'>
+              Pliki na stronie udostępnione na zasadzie licencji Creative Commons z wyjątkiem plików stron trzecich, które udostępniane są na zasadzie
+              ich pierwotnej licencji{' '}
+            </span>
           </div>
           <div className='social-media'>
             <a className='link' href='https://www.youtube.com/@ErasmusELEKTRONIK'>
