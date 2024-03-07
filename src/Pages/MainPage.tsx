@@ -89,7 +89,10 @@ const MainPage: React.FC = () => {
       </section>
       <section className='about'>
         <div className='description' id='o-projekcie'>
-          <span className='description-title'>Projekt Erasmus+ 2024 w Maladze</span>
+          <div className='description-title-wrapper'>
+            <span className='description-title'>Projekt Erasmus+ 2024 w Maladze</span>
+            <hr />
+          </div>
           <div className='description-content'>
             <div className='description-text-image'>
               <div className='description-text-wrapper'>
@@ -125,7 +128,10 @@ const MainPage: React.FC = () => {
           </div>
         </div>
         <div className='description expectations' id='oczekiwania'>
-          <span className='description-title'>Nasze oczekiwania względem projektu</span>
+          <div className='description-title-wrapper'>
+            <span className='description-title'>Nasze oczekiwania względem projektu</span>
+            <hr />
+          </div>
           <div className='description-content'>
             <div className='expectations-control'>
               <svg
@@ -161,7 +167,10 @@ const MainPage: React.FC = () => {
           </div>
         </div>
         <div className='description process' id='przebieg'>
-          <span className='description-title'>Przebieg projektu</span>
+          <div className='description-title-wrapper'>
+            <span className='description-title'>Przebieg projektu</span>
+            <hr />
+          </div>
           <div className='description-content'>
             <table>
               <thead>
@@ -250,15 +259,10 @@ const MainPage: React.FC = () => {
           </div>
         </div>
         <div className='description attendees' id='lista-uczniow'>
-          <span className='description-title'>
-            Lista uczestników
-            <a href='/files/lista-uczestników.pdf' target='_blank' rel='noreferrer' download>
-              <svg xmlns='http://www.w3.org/2000/svg' className='download' viewBox='0 0 16 16'>
-                <path d='M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5' />
-                <path d='M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z' />
-              </svg>
-            </a>
-          </span>
+          <div className='description-title-wrapper'>
+            <span className='description-title'>Lista uczestników</span>
+            <hr />
+          </div>
           <div className='description-content'>
             <table>
               <thead>
