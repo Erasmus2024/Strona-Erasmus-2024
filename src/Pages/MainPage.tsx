@@ -273,13 +273,137 @@ const MainPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                {Expectations.sort((a, b) => a.author.localeCompare(b.author)).map((expectation, index) => (
-                  <tr>
-                    <td>{index + 1}</td>
-                    <td>{expectation.author}</td>
-                    <td>{expectation.occupation}</td>
-                  </tr>
-                ))}
+                <tr>
+                  <td>2.</td>
+                  <td>Aleksander Kosała</td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>3.</td>
+                  <td>Bartłomiej Zapart </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>4.</td>
+                  <td>Błażej Kuberski </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>5.</td>
+                  <td>Dawid Trzcionka </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>6.</td>
+                  <td>Dawid Zbożniak </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>7.</td>
+                  <td>Filip Flak </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>8.</td>
+                  <td>Filip Jakubczyk </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>9.</td>
+                  <td>Jakub Jastrząb </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>10.</td>
+                  <td>Jakub Wróbel </td>
+                  <td>technik elektronik</td>
+                </tr>
+
+                <tr>
+                  <td>11.</td>
+                  <td>Jan Tokarz </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>12.</td>
+                  <td>Kamil Marczak </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>13.</td>
+                  <td>Karolina Jaromin </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>14.</td>
+                  <td>Marcel Maciaszczyk </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>15.</td>
+                  <td>Marcin Mikuła </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>16.</td>
+                  <td>Marta Biała </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>17.</td>
+                  <td>Mateusz Jakubek</td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>18.</td>
+                  <td>Michał Jurgaś </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>19.</td>
+                  <td>Michał Mikuła </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>20.</td>
+                  <td>Piotr Jakóbczyk </td>
+                  <td>technik programista</td>
+                </tr>
+
+                <tr>
+                  <td>21.</td>
+                  <td>Szymon Matyja </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>22.</td>
+                  <td>Szymon Seklecki </td>
+                  <td>technik informatyk</td>
+                </tr>
+
+                <tr>
+                  <td>23.</td>
+                  <td>Wojciech Wyrwas </td>
+                  <td>technik informatyk</td>
+                </tr>
               </tbody>
             </table>
           </div>

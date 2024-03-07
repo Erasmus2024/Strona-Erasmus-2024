@@ -280,13 +280,13 @@ body {
 
       thead {
         tr {
-          background-image: linear-gradient(to bottom right, #003366, #0066cc);
+          background-color: #003366;
           font-family: 'Poppins', sans-serif;
         }
       }
 
       tr {
-        border: 1px solid #003366;
+        border: 1px solid white;
         td {
           padding: 1vh 1vw;
           &:nth-of-type(2) {
@@ -295,37 +295,48 @@ body {
           &:nth-of-type(3) {
             padding: 1vh 1.5vw;
           }
+          &:last-of-type {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+          }
         }
 
         th {
-          padding: 1vh 1vw;
-          color: #ffa500;
+            padding: 1vh 1vw;
+            color: white;
+            text-align: center;
         }
       }
 
       tr:nth-child(even) {
-        background-color: #cce6ff;
+        background-color: #e1e1e1;
       }
     }
 
     .link-button {
       border: 1px solid #003366;
       padding: 1vh 1vw;
+      width: fit-content;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       text-decoration-line: none;
-      background-image: linear-gradient(to bottom right, #003366, #0066cc);
+      background-color: #003366;
+      transition: background-color 0.2s;
 
       .label {
-        color: #ffa500;
+        color: white;
         margin-right: 1vw;
+        font-size: 12px;
       }
 
       .icon {
-        fill: #ffa500;
+        fill: white;
+        height: 12px;
       }
 
       &:hover {
