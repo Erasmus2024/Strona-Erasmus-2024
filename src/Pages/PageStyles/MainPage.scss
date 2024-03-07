@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x: hidden;
+}
 .main-navbar {
   font-family: Poppins, sans-serif;
   display: flex;
@@ -135,18 +138,18 @@
   flex-flow: column nowrap;
   align-items: start;
   justify-content: space-between;
-  margin-top: 2vh;
   padding: 0 10% 0 10%;
+  margin: 25vh 0;
 }
 
 .description-title {
   display: inline-block;
-  width: 61%;
+  width: 100%;
   color: #ffa500;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 500;
-  text-align: start;
-  border-bottom: 2px solid #003366;
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
 }
 
 .description-text-image {
@@ -182,13 +185,12 @@
 }
 
 .expectations {
-  margin-top: 5vh;
-
+  margin: 30vh 0;
   padding: 0;
 
   .description-title {
     margin-left: 1vw;
-    margin-bottom: 5vh;
+    margin-bottom: 100px;
   }
 
   .description-content {
@@ -220,7 +222,7 @@
     }
 
     .expectations-list {
-      padding: 1vh 1vw;
+      padding: 2vh 1vw;
       display: flex;
       position: relative;
       flex-flow: row nowrap;
@@ -232,12 +234,12 @@
 }
 
 .process {
-  margin: 5vh 0;
+  margin: 30vh 0;
   padding: 0;
 
   .description-title {
     margin-left: 1vw;
-    margin-bottom: 5vh;
+    margin-bottom: 100px;
   }
 
   .description-content {
@@ -258,6 +260,7 @@
       thead {
         tr {
           background-image: linear-gradient(to bottom right, #003366, #0066cc);
+          font-family: 'Poppins', sans-serif;
         }
       }
 
@@ -321,12 +324,12 @@
 }
 
 .attendees {
-  margin: 5vh 0;
+  margin: 30vh 0;
   padding: 0;
 
   .description-title {
     margin-left: 1vw;
-    margin-bottom: 5vh;
+    margin-bottom: 100px;
     padding-bottom: 1vh;
 
     a {
@@ -371,6 +374,7 @@
       thead {
         tr {
           background-image: linear-gradient(to bottom right, #003366, #0066cc);
+          font-family: 'Poppins', sans-serif;
         }
       }
 
@@ -392,9 +396,6 @@
     }
   }
 }
-#oczekiwania {
-  padding-bottom: 50px;
-}
 footer {
   display: flex;
   flex-flow: column nowrap;
@@ -413,6 +414,7 @@ footer {
     .project-details {
       color: white;
       margin-top: 4vh;
+      font-family: 'Poppins', sans-serif;
     }
 
     .partners {
@@ -445,6 +447,7 @@ footer {
       align-items: center;
       justify-content: space-evenly;
       flex-grow: 1;
+      font-size: 10px;
 
       .closure {
         font-size: 10px;
