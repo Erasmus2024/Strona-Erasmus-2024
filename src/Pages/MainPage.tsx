@@ -26,10 +26,10 @@ const MainPage: React.FC = () => {
   }, []);
 
   const MoveLeft: () => void = () => {
-    if (expectationsListLeft > (Expectations.length - 3) * 33 * -1) {
+    if (expectationsListLeft > (Expectations.length - 3) * 35 * -1) {
       if (expectationsListRef.current) {
-        expectationsListRef.current.style.left = expectationsListLeft - 33 + 'vw';
-        setExpectationsListLeft(expectationsListLeft - 33);
+        expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
+        setExpectationsListLeft(expectationsListLeft - 35);
       }
     }
   };
@@ -37,8 +37,8 @@ const MainPage: React.FC = () => {
   const MoveRight: () => void = () => {
     if (expectationsListLeft === 0) return;
     if (expectationsListRef.current) {
-      expectationsListRef.current.style.left = expectationsListLeft + 33 + 'vw';
-      setExpectationsListLeft(expectationsListLeft + 33);
+      expectationsListRef.current.style.left = expectationsListLeft + 35 + 'vw';
+      setExpectationsListLeft(expectationsListLeft + 35);
     }
   };
 
@@ -145,7 +145,7 @@ const MainPage: React.FC = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 16 16'
                 onClick={MoveLeft}
-                style={{ visibility: expectationsListLeft > (Expectations.length - 3) * 33 * -1 ? 'visible' : 'hidden' }}
+                style={{ visibility: expectationsListLeft > (Expectations.length - 3) * 35 * -1 ? 'visible' : 'hidden' }}
               >
                 <path
                   fill-rule='evenodd'
