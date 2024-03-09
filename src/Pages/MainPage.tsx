@@ -8,7 +8,7 @@ import LogoMobility from '../images/logo_mobility_alpha.png';
 import MalagaFirstPhoto from '../images/malaga.jpeg';
 import Working2 from '../images/working2.jpg';
 import Erasmus from '../images/erasmus.jpg';
-
+import './PageStyles/MainPageMediaQuery.scss';
 const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
   const [expectationsListLeft, setExpectationsListLeft]: [number, Dispatch<SetStateAction<number>>] = useState(0);
