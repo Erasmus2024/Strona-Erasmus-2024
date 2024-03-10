@@ -27,13 +27,15 @@ const MainPage: React.FC = () => {
   }, []);
 
   const expandNavbar: () => void = () => {
-    const navbar = document.querySelector('.main-navbar');
-    if (navbar) {
-      navbar.classList.toggle('expanded');
-    }
+    setIsNavbarExpanded(!isNavbarExpanded);
   };
   const MoveLeft: () => void = () => {
-    setIsNavbarExpanded(!isNavbarExpanded);
+    if (expectationsListLeft > (Expectations.length - 3) * 35 * -1) {
+      if (expectationsListRef.current) {
+        expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
+        setExpectationsListLeft(expectationsListLeft - 35);
+      }
+    }
   };
 
   const MoveRight: () => void = () => {
