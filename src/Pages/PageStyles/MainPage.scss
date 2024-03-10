@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: 1000;
+  z-index: 100;
   transition: all 1s ease-in-out;
   background-color: transparent;
 }
@@ -512,4 +512,7 @@ footer {
       }
     }
   }
+}
+.show-hide-navbar {
+  display: none;
 }

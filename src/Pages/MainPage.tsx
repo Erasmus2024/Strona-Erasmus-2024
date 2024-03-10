@@ -13,6 +13,7 @@ const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
   const [expectationsListLeft, setExpectationsListLeft]: [number, Dispatch<SetStateAction<number>>] = useState(0);
   const [shadow, setShadow] = useState(false);
+  const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,13 +26,14 @@ const MainPage: React.FC = () => {
     };
   }, []);
 
-  const MoveLeft: () => void = () => {
-    if (expectationsListLeft > (Expectations.length - 3) * 35 * -1) {
-      if (expectationsListRef.current) {
-        expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
-        setExpectationsListLeft(expectationsListLeft - 35);
-      }
+  const expandNavbar: () => void = () => {
+    const navbar = document.querySelector('.main-navbar');
+    if (navbar) {
+      navbar.classList.toggle('expanded');
     }
+  };
+  const MoveLeft: () => void = () => {
+    setIsNavbarExpanded(!isNavbarExpanded);
   };
 
   const MoveRight: () => void = () => {
@@ -44,7 +46,7 @@ const MainPage: React.FC = () => {
 
   return (
     <div className='container'>
-      <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''}`}>
+      <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''} ${isNavbarExpanded ? 'expanded' : ''}`}>
         <div className='navbar-logo'>
           <span className='navbar-logo-first-element'>Erasmus+ 2024 | </span>
           <span className='navbar-logo-second-element'>Hiszpania</span>
@@ -445,6 +447,12 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </footer>
+      <div className='show-hide-navbar' onClick={() => expandNavbar()}>
+        <div className='first-line'></div>
+        <div className='second-line'></div>
+        <div className='third-line'></div>
+      </div>
+      {}
     </div>
   );
 };
