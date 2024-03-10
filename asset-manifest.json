@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Strona-Erasmus-2024/static/css/main.108b8a23.css",
-    "main.js": "/Strona-Erasmus-2024/static/js/main.9f7a4463.js",
+    "main.js": "/Strona-Erasmus-2024/static/js/main.58a911a3.js",
     "static/media/malaga-hero.png": "/Strona-Erasmus-2024/static/media/malaga-hero.0f4b73a77b16876e617a.png",
     "static/media/working2.jpg": "/Strona-Erasmus-2024/static/media/working2.b7019402bf48d3db7c6e.jpg",
     "static/media/logo_mobility_alpha.png": "/Strona-Erasmus-2024/static/media/logo_mobility_alpha.c7c9e15ad722377d7848.png",
@@ -11,10 +11,10 @@
     "static/media/elektronik.png": "/Strona-Erasmus-2024/static/media/elektronik.9398c99cb2046aefcfba.png",
     "index.html": "/Strona-Erasmus-2024/index.html",
     "main.108b8a23.css.map": "/Strona-Erasmus-2024/static/css/main.108b8a23.css.map",
-    "main.9f7a4463.js.map": "/Strona-Erasmus-2024/static/js/main.9f7a4463.js.map"
+    "main.58a911a3.js.map": "/Strona-Erasmus-2024/static/js/main.58a911a3.js.map"
   },
   "entrypoints": [
     "static/css/main.108b8a23.css",
-    "static/js/main.9f7a4463.js"
+    "static/js/main.58a911a3.js"
   ]
 }
