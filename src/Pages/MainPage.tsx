@@ -19,13 +19,17 @@ const MainPage: React.FC = () => {
   const windowSize: number[] = useWindowSize();
   const [isRightArrowVisible, setIsRightArrowVisible]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(
     (() => {
-      if(windowSize[0] > 500)
+      if(windowSize[0] > 950)
       {
         return (expectationsListLeft > (Expectations.length - 3) * 33 * -1 );
       }
+      else if(windowSize[0] > 500) 
+      {
+        return (expectationsListLeft > (Expectations.length - 2) * 50 * -1);
+      }
       else 
       {
-        return (expectationsListLeft > Expectations.length * 102 * -1);
+        return (expectationsListLeft > (Expectations.length - 1) * 102 * -1);
       }
     })()
   )
@@ -41,24 +45,49 @@ const MainPage: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+      if(windowSize[0] > 950)
+      {
+        setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 3) * 33 * -1 );
+      }
+      else if(windowSize[0] > 550) 
+      {
+        setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 2) * 50 * -1);
+      }
+      else 
+      {
+        setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 1) * 102 * -1);
+      }
+  }, [windowSize, expectationsListLeft])
+
+  useEffect(() => {
+    setExpectationsListLeft(0);
+    if(expectationsListRef.current) expectationsListRef.current.style.left = '0vw' ;
+  }, [windowSize, expectationsListRef])
+
   const expandNavbar: () => void = () => {
     setIsNavbarExpanded(!isNavbarExpanded);
   };
   const MoveLeft: () => void = () => {
-    if(windowSize[0] > 500){
+    if(windowSize[0] > 950){
       if (expectationsListLeft < (Expectations.length - 3) * 33 * -1 ) return;
       if (expectationsListRef.current) {
           expectationsListRef.current.style.left = expectationsListLeft - 33 + 'vw';
           setExpectationsListLeft(expectationsListLeft - 33);
-          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 3) * 33 * -1)
+      }
+    }
+    else if(windowSize[0] > 550){
+      if (expectationsListLeft < (Expectations.length - 2) * 50 * -1 ) return;
+      if (expectationsListRef.current) {
+          expectationsListRef.current.style.left = expectationsListLeft - 50 + 'vw';
+          setExpectationsListLeft(expectationsListLeft - 50);
       }
     }
     else {
-      if (expectationsListLeft < (Expectations.length - 2) * 102 * -1 ) return;
+      if (expectationsListLeft < (Expectations.length - 1) * 102 * -1 ) return;
       if (expectationsListRef.current) {
           expectationsListRef.current.style.left = expectationsListLeft - 102 + 'vw';
           setExpectationsListLeft(expectationsListLeft - 102);
-          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 2) * 102 * -1)
       }
     }
   };
@@ -66,9 +95,13 @@ const MainPage: React.FC = () => {
   const MoveRight: () => void = () => {
     if (expectationsListLeft === 0) return;
     if (expectationsListRef.current) {
-      if(windowSize[0] > 500) {
+      if(windowSize[0] > 950) {
         expectationsListRef.current.style.left = expectationsListLeft + 35 + 'vw';
         setExpectationsListLeft(expectationsListLeft + 35);
+      }
+      else if(windowSize[0] > 550) {
+        expectationsListRef.current.style.left = expectationsListLeft + 50 + 'vw';
+        setExpectationsListLeft(expectationsListLeft + 50);
       }
       else {
         expectationsListRef.current.style.left = expectationsListLeft + 102 + 'vw';

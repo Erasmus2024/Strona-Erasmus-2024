@@ -137,14 +137,7 @@
   }
 
 }
-@media only screen and (max-width: 500px) {
-  .description-text-image {
-    img {
-      width: 85vw;
-      height: 57vw;
-    }
-  }
-
+@media only screen and (max-width: 550px) {
   .expectations {
     .description-content {
       .expectations-control {
@@ -154,6 +147,15 @@
       }
     }
   }
+}
+@media only screen and (max-width: 500px) {
+  .description-text-image {
+    img {
+      width: 85vw;
+      height: 57vw;
+    }
+  }
+
 
   footer {
     .project-details-container {
