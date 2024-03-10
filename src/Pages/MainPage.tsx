@@ -21,7 +21,7 @@ const MainPage: React.FC = () => {
     (() => {
       if(windowSize[0] > 500)
       {
-        return (expectationsListLeft > (Expectations.length - 3) * 35 * -1 );
+        return (expectationsListLeft > (Expectations.length - 3) * 33 * -1 );
       }
       else 
       {
@@ -46,11 +46,11 @@ const MainPage: React.FC = () => {
   };
   const MoveLeft: () => void = () => {
     if(windowSize[0] > 500){
-      if (expectationsListLeft < (Expectations.length - 3) * 35 * -1 ) return;
+      if (expectationsListLeft < (Expectations.length - 3) * 33 * -1 ) return;
       if (expectationsListRef.current) {
-          expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
-          setExpectationsListLeft(expectationsListLeft - 35);
-          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 3) * 35 * -1)
+          expectationsListRef.current.style.left = expectationsListLeft - 33 + 'vw';
+          setExpectationsListLeft(expectationsListLeft - 33);
+          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 3) * 33 * -1)
       }
     }
     else {
