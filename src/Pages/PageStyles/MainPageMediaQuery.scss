@@ -28,6 +28,10 @@
       height: 45vw;
     }
   }
+  .hero {
+    align-items: start;
+    padding-top: 70px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .description-text-image {
