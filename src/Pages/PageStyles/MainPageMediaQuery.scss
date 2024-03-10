@@ -3,6 +3,16 @@
     flex-direction: column;
     gap: 50px;
   }
+
+  footer {
+    .project-details-container {
+      .partners {
+        img {
+          height: 8vh;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1300px) {
   .description-text-image {
@@ -75,12 +85,97 @@
   .expanded {
     left: 0;
   }
+
+  .process {
+    table {
+      td, th {
+        font-size: 10px;
+      }
+    }
+
+    .link-button {
+      padding: 0.5vh 0.5vw;
+      .label {
+        font-size: 8px;
+      }
+
+      .icon {
+        height: 8px;
+      }
+    }
+  }
+
+  .attendees {
+    table {
+      td, th {
+        font-size: 10px;
+      }
+    }
+  }
+
+  footer {
+    .project-details-container {
+      .project-details {
+        font-size: 12px;
+      }
+
+      .partners {
+        img {
+          height: 6vh;
+        }
+      }
+    }
+    .authors-social-media {
+      .social-media {
+        .link {
+          .fb, .youtube {
+            height: 2.5vh
+          }
+        }
+      }
+    }
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .description-text-image {
     img {
       width: 85vw;
       height: 57vw;
+    }
+  }
+
+  .expectations {
+    .description-content {
+      .expectations-control {
+        .left-arrow, .right-arrow {
+          width: 6vw;
+        }
+      }
+    }
+  }
+
+  footer {
+    .project-details-container {
+      .project-details {
+        font-size: 8px;
+      }
+      .partners {
+        img {
+          height: 4vh;
+        }
+      }
+    }
+
+    .authors-social-media {
+      .authors {
+        font-size: 8px;
+
+        .closure {
+          font-size: 8px;
+          margin: 0 2vw;
+        }
+      }
     }
   }
 }

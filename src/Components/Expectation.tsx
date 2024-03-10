@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import "./ComponentsStyles/Expectation.scss";
+import "./ComponentsStyles/ExpectationMediaQueries.scss";
 import { IExpectation } from './interfaces/Expectation.interface';
 
 const Expectation: FC<IExpectation> = ({author, content}) => {

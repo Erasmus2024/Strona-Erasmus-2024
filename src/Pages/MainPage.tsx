@@ -9,11 +9,26 @@ import MalagaFirstPhoto from '../images/malaga.jpeg';
 import Working2 from '../images/working2.jpg';
 import Erasmus from '../images/erasmus.jpg';
 import './PageStyles/MainPageMediaQuery.scss';
+import useWindowSize from '../Helpers/useWindowSize';
+
 const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
   const [expectationsListLeft, setExpectationsListLeft]: [number, Dispatch<SetStateAction<number>>] = useState(0);
   const [shadow, setShadow] = useState(false);
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+  const windowSize: number[] = useWindowSize();
+  const [isRightArrowVisible, setIsRightArrowVisible]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(
+    (() => {
+      if(windowSize[0] > 500)
+      {
+        return (expectationsListLeft > (Expectations.length - 3) * 35 * -1 );
+      }
+      else 
+      {
+        return (expectationsListLeft > Expectations.length * 102 * -1);
+      }
+    })()
+  )
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,10 +45,20 @@ const MainPage: React.FC = () => {
     setIsNavbarExpanded(!isNavbarExpanded);
   };
   const MoveLeft: () => void = () => {
-    if (expectationsListLeft > (Expectations.length - 3) * 35 * -1) {
+    if(windowSize[0] > 500){
+      if (expectationsListLeft < (Expectations.length - 3) * 35 * -1 ) return;
       if (expectationsListRef.current) {
-        expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
-        setExpectationsListLeft(expectationsListLeft - 35);
+          expectationsListRef.current.style.left = expectationsListLeft - 35 + 'vw';
+          setExpectationsListLeft(expectationsListLeft - 35);
+          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 3) * 35 * -1)
+      }
+    }
+    else {
+      if (expectationsListLeft < (Expectations.length - 2) * 102 * -1 ) return;
+      if (expectationsListRef.current) {
+          expectationsListRef.current.style.left = expectationsListLeft - 102 + 'vw';
+          setExpectationsListLeft(expectationsListLeft - 102);
+          setIsRightArrowVisible(expectationsListLeft > (Expectations.length - 2) * 102 * -1)
       }
     }
   };
@@ -41,8 +66,14 @@ const MainPage: React.FC = () => {
   const MoveRight: () => void = () => {
     if (expectationsListLeft === 0) return;
     if (expectationsListRef.current) {
-      expectationsListRef.current.style.left = expectationsListLeft + 35 + 'vw';
-      setExpectationsListLeft(expectationsListLeft + 35);
+      if(windowSize[0] > 500) {
+        expectationsListRef.current.style.left = expectationsListLeft + 35 + 'vw';
+        setExpectationsListLeft(expectationsListLeft + 35);
+      }
+      else {
+        expectationsListRef.current.style.left = expectationsListLeft + 102 + 'vw';
+        setExpectationsListLeft(expectationsListLeft + 102);
+      }
     }
   };
 
@@ -155,7 +186,7 @@ const MainPage: React.FC = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 16 16'
                 onClick={MoveLeft}
-                style={{ visibility: expectationsListLeft > (Expectations.length - 3) * 35 * -1 ? 'visible' : 'hidden' }}
+                style={{ visibility: isRightArrowVisible ? 'visible' : 'hidden' }}
               >
                 <path
                   fill-rule='evenodd'
