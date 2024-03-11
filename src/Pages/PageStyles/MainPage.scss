@@ -9,6 +9,9 @@
 body {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 .main-navbar {
   font-family: Poppins, sans-serif;
   display: flex;
@@ -312,7 +315,6 @@ body {
           &:nth-child(odd) {
             background-color: white;
           }
-
         }
       }
 
