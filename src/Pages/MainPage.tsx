@@ -97,14 +97,14 @@ const MainPage: React.FC = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container' id='top'>
       <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''} ${isNavbarExpanded ? 'expanded' : ''}`}>
         <div className='navbar-logo'>
           <span className='navbar-logo-first-element'>Erasmus+ 2024 | </span>
           <span className='navbar-logo-second-element'>Hiszpania</span>
         </div>
         <div className='navbar-menu'>
-          <a href='/' className='navbar-menu-item'>
+          <a href='#top' className='navbar-menu-item'>
             Strona główna
           </a>
           <a href='#o-projekcie' className='navbar-menu-item'>
@@ -121,7 +121,7 @@ const MainPage: React.FC = () => {
       <section className='hero'>
         <div className='main-content'>
           <div className='main-title'>
-            <span id='hero-first-element'>Praktyki zagraniczne Elektronika</span> <br />
+            <span id='hero-first-element'>Staże zawodowe Elektronika</span> <br />
             <span id='hero-second-element'>Malaga, 2024</span>
           </div>
           <div className='hero-menu'>
@@ -151,10 +151,10 @@ const MainPage: React.FC = () => {
             <div className='description-text-image'>
               <div className='description-text-wrapper'>
                 <p className='description-text'>
-                  Program Erasmus+ na rok 2024 w Maladze otwiera przed studentami naszej Szkoły wyjątkową szansę zanurzenia się w kulturowe,
-                  historyczne i edukacyjne bogactwo południowej Hiszpanii. Celem projektu jest nie tylko umożliwienie uczestnikom zdobycia
-                  międzynarodowego doświadczenia, ale także zapewnienie im możliwości zgłębienia unikatowych wartości i tradycji regionu, co przyczyni
-                  się do ich rozwoju osobistego i zawodowego.
+                  Program Erasmus+ na rok 2024 w Maladze otwiera przed uczniami naszej Szkoły wyjątkową szansę zanurzenia się w kulturowe, historyczne
+                  i edukacyjne bogactwo południowej Hiszpanii. Celem projektu jest nie tylko umożliwienie uczestnikom zdobycia międzynarodowego
+                  doświadczenia, ale także zapewnienie im możliwości zgłębienia unikatowych wartości i tradycji regionu, co przyczyni się do ich
+                  rozwoju osobistego i zawodowego.
                 </p>
               </div>
               <img className='description-image' src={MalagaFirstPhoto} alt='Malaga Landscape' />
@@ -162,7 +162,7 @@ const MainPage: React.FC = () => {
             <div className='description-text-image reverse'>
               <p className='description-text'>
                 Uczestnicy będą mieli okazję uczestniczyć w kursach i warsztatach prowadzonych przez wybitnych ekspertów, co pozwoli im zgłębić wiedzę
-                wykraczającą poza tradycyjne ramy uczelni. Malaga, z jej bogatą historią i kulturą, stanowi idealne tło dla dialogu międzykulturowego,
+                wykraczającą poza tradycyjne ramy szkoły. Malaga, z jej bogatą historią i kulturą, stanowi idealne tło dla dialogu międzykulturowego,
                 zachęcając do eksploracji andaluzyjskiego dziedzictwa. Projekt kładzie również nacisk na rozwój osobisty i zawodowy, promując
                 umiejętności miękkie, takie jak komunikacja międzykulturowa, adaptacja i zarządzanie projektem, które są cenione na globalnym rynku
                 pracy.
