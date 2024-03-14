@@ -482,7 +482,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     .authors {
       height: 5vh;
@@ -493,12 +493,7 @@ footer {
       align-items: center;
       justify-content: space-evenly;
       flex-grow: 1;
-      font-size: 10px;
-
-      .closure {
-        font-size: 10px;
-        font-weight: 500;
-      }
+      font-size: 12px;
     }
 
     .social-media {

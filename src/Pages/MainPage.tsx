@@ -65,6 +65,10 @@ const MainPage: React.FC = () => {
     if(expectationsListRef.current) expectationsListRef.current.style.left = '0vw' ;
   }, [windowSize, expectationsListRef])
 
+  useEffect(() => {
+    console.log("ExpectationsListLeft:", expectationsListLeft + "vw");
+  }, [expectationsListLeft])
+
   const expandNavbar: () => void = () => {
     setIsNavbarExpanded(!isNavbarExpanded);
   };
@@ -96,8 +100,8 @@ const MainPage: React.FC = () => {
     if (expectationsListLeft === 0) return;
     if (expectationsListRef.current) {
       if(windowSize[0] > 950) {
-        expectationsListRef.current.style.left = expectationsListLeft + 35 + 'vw';
-        setExpectationsListLeft(expectationsListLeft + 35);
+        expectationsListRef.current.style.left = expectationsListLeft + 33 + 'vw';
+        setExpectationsListLeft(expectationsListLeft + 33);
       }
       else if(windowSize[0] > 550) {
         expectationsListRef.current.style.left = expectationsListLeft + 50 + 'vw';
@@ -207,7 +211,7 @@ const MainPage: React.FC = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 16 16'
                 onClick={MoveRight}
-                style={{ visibility: expectationsListLeft !== 0 ? 'visible' : 'hidden' }}
+                style={{ visibility: expectationsListLeft < 0 ? 'visible' : 'hidden' }}
               >
                 <path
                   fill-rule='evenodd'
@@ -494,10 +498,6 @@ const MainPage: React.FC = () => {
         <div className='authors-social-media'>
           <div className='authors'>
             <span>Stronę przygotowali: Michał Mikuła, Kamil Marczak</span>
-            <span className='closure'>
-              Pliki na stronie udostępnione na zasadzie licencji Creative Commons z wyjątkiem plików stron trzecich, które udostępniane są na zasadzie
-              ich pierwotnej licencji{' '}
-            </span>
           </div>
           <div className='social-media'>
             <a className='link' href='https://www.youtube.com/@ErasmusELEKTRONIK'>
