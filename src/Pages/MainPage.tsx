@@ -10,6 +10,7 @@ import Working2 from '../images/working2.jpg';
 import Erasmus from '../images/erasmus.jpg';
 import './PageStyles/MainPageMediaQuery.scss';
 import useWindowSize from '../Helpers/useWindowSize';
+import MainNavbar from '../Components/MainNavbar';
 
 const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
@@ -99,26 +100,7 @@ const MainPage: React.FC = () => {
 
   return (
     <div className='container' id='top'>
-      <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''} ${isNavbarExpanded ? 'expanded' : ''}`}>
-        <div className='navbar-logo'>
-          <span className='navbar-logo-first-element'>Erasmus+ 2024 | </span>
-          <span className='navbar-logo-second-element'>Hiszpania</span>
-        </div>
-        <div className='navbar-menu'>
-          <a href='#top' className='navbar-menu-item'>
-            Strona główna
-          </a>
-          <a href='#o-projekcie' className='navbar-menu-item'>
-            O projekcie
-          </a>
-          <a href='#lista-uczniow' className='navbar-menu-item'>
-            Lista uczesników
-          </a>
-          <a href='/' className='navbar-menu-item'>
-            Galeria
-          </a>
-        </div>
-      </nav>
+    <MainNavbar shadow={shadow} isNavbarExpanded={isNavbarExpanded} />
       <section className='hero'>
         <div className='main-content'>
           <div className='main-title'>
