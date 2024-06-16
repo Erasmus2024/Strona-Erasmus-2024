@@ -15,8 +15,7 @@ import MainNavbar from '../Components/MainNavbar';
 const MainPage: React.FC = () => {
   const expectationsListRef: Ref<HTMLDivElement> = useRef(null);
   const [expectationsListLeft, setExpectationsListLeft]: [number, Dispatch<SetStateAction<number>>] = useState(0);
-  const [shadow, setShadow] = useState(false);
-  const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+ 
   const windowSize: number[] = useWindowSize();
   const [isRightArrowVisible, setIsRightArrowVisible]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(
     (() => {
@@ -30,16 +29,7 @@ const MainPage: React.FC = () => {
     })()
   );
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setShadow(isScrolled);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+ 
 
   useEffect(() => {
     if (windowSize[0] > 950) {
@@ -56,9 +46,7 @@ const MainPage: React.FC = () => {
     if (expectationsListRef.current) expectationsListRef.current.style.left = '0vw';
   }, [windowSize, expectationsListRef]);
 
-  const expandNavbar: () => void = () => {
-    setIsNavbarExpanded(!isNavbarExpanded);
-  };
+ 
   const MoveLeft: () => void = () => {
     if (windowSize[0] > 950) {
       if (expectationsListLeft < (Expectations.length - 3) * 33 * -1) return;
@@ -100,7 +88,7 @@ const MainPage: React.FC = () => {
 
   return (
     <div className='container' id='top'>
-    <MainNavbar shadow={shadow} isNavbarExpanded={isNavbarExpanded} />
+    <MainNavbar  />
       <section className='hero'>
         <div className='main-content'>
           <div className='main-title'>
@@ -478,11 +466,7 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </footer>
-      <div className='show-hide-navbar' onClick={() => expandNavbar()}>
-        <div className='first-line'></div>
-        <div className='second-line'></div>
-        <div className='third-line'></div>
-      </div>
+     
       {}
     </div>
   );

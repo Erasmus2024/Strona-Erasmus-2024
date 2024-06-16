@@ -1,12 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-type Props = {
-    shadow: boolean;
-    isNavbarExpanded: boolean;
 
-}
-const MainNavbar: React.FC<Props> = ({shadow, isNavbarExpanded}) => {
+const MainNavbar: React.FC = () => {
+
+    
+    const [shadow, setShadow] = useState(false);
+    const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+
+    const expandNavbar: () => void = () => {
+        setIsNavbarExpanded(!isNavbarExpanded);
+      };
+    useEffect(() => {
+        const handleScroll = () => {
+          const isScrolled = window.scrollY > 0;
+          setShadow(isScrolled);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
     return (
+        
         <nav className={`main-navbar ${shadow ? 'navbar-shadow' : ''} ${isNavbarExpanded ? 'expanded' : ''}`}>
         <div className='navbar-logo'>
           <span className='navbar-logo-first-element'>Erasmus+ 2024 | </span>
@@ -26,7 +41,13 @@ const MainNavbar: React.FC<Props> = ({shadow, isNavbarExpanded}) => {
             Galeria
           </a>
         </div>
+        <div className='show-hide-navbar' onClick={() => expandNavbar()}>
+        <div className='first-line'></div>
+        <div className='second-line'></div>
+        <div className='third-line'></div>
+      </div>
       </nav>
+      
     );
 };
 
