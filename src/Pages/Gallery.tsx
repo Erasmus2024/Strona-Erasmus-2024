@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
     const [actualChoice, setActualChoice] = useState<boolean>(false); // false - videos, true - photos
 
     return (
-        <div className='container'>
+        <div className='container' style={{padding: '0 50px 0 50px'}}>
             <MainNavbar />
             <div className="choose-videos-gallery-container">
                 <div className={`wrapper-container ${actualChoice ? 'right-underline' : 'left-underline'}`}>
