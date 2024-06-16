@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MainNavbar from '../Components/MainNavbar';
 import './PageStyles/Gallery.scss';
+import VideosGalleryWrapper from '../Components/VideosGalleryWrapper';
 
 const Gallery: React.FC = () => {
     const [actualChoice, setActualChoice] = useState<boolean>(false); // false - videos, true - photos
@@ -24,6 +25,7 @@ const Gallery: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <VideosGalleryWrapper />
         </div>
     );
 };
