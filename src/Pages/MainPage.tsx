@@ -284,10 +284,16 @@ const MainPage: React.FC = () => {
                   <td>6.</td>
                   <td>Udział w szkoleniu z programowania na platformie Arduino i druku 3D.</td>
                   <td>13.05.2024 - 24.05.2024</td>
-                  <td>TODO: Add link to "Wycieczki" gallery</td>
+                  <td>TODO: Add link to "Szkolenie" gallery</td>
                 </tr>
                 <tr>
                   <td>7.</td>
+                  <td>Program kulturowy.</td>
+                  <td>13.05.2024 - 24.05.2024</td>
+                  <td>TODO: Add link to "Wycieczki" gallery</td>
+                </tr>
+                <tr>
+                  <td>8.</td>
                   <td>Przygotowanie rezultatów projektu.</td>
                   <td>27.05.2024 - 10.06.2024</td>
                   <td>TODO: Add link to project results</td>
