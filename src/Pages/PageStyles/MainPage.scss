@@ -444,6 +444,37 @@ html {
     }
   }
 }
+
+.opinions {
+  margin: 30vh 0;
+  padding: 0;
+
+  .description-title-wrapper {
+    margin-left: 1vw;
+    margin-bottom: 100px;
+  }
+
+  .description-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+
+    .opinions-list {
+      padding: 2vh 1vw;
+      display: flex;
+      position: relative;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      transition: left 1s;
+    }
+  }
+}
+
 footer {
   display: flex;
   flex-flow: column nowrap;

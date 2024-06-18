@@ -1,6 +1,7 @@
 import React, { Dispatch, Ref, SetStateAction, useRef, useState, useEffect } from 'react';
 import './PageStyles/MainPage.scss';
 import Expectations from '../Expectations.json';
+import Opinions from '../Opinions.json';
 import Expectation from '../Components/Expectation';
 import UE from '../images/ue.png';
 import Elektronik from '../images/elektronik.png';
@@ -167,7 +168,7 @@ const MainPage: React.FC = () => {
                 style={{ visibility: expectationsListLeft < 0 ? 'visible' : 'hidden' }}
               >
                 <path
-                  fill-rule='evenodd'
+                  fillRule='evenodd'
                   d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z'
                 />
               </svg>
@@ -179,7 +180,7 @@ const MainPage: React.FC = () => {
                 style={{ visibility: isRightArrowVisible ? 'visible' : 'hidden' }}
               >
                 <path
-                  fill-rule='evenodd'
+                  fillRule='evenodd'
                   d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z'
                 />
               </svg>
@@ -216,11 +217,11 @@ const MainPage: React.FC = () => {
                       <span className='label'>Przejdź</span>
                       <svg xmlns='http://www.w3.org/2000/svg' className='icon' width='16' height='16' viewBox='0 0 16 16'>
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5'
                         />
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z'
                         />
                       </svg>
@@ -236,11 +237,11 @@ const MainPage: React.FC = () => {
                       <span className='label'>Przejdź</span>
                       <svg xmlns='http://www.w3.org/2000/svg' className='icon' width='16' height='16' viewBox='0 0 16 16'>
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5'
                         />
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z'
                         />
                       </svg>
@@ -256,11 +257,11 @@ const MainPage: React.FC = () => {
                       <span className='label'>Przejdź</span>
                       <svg xmlns='http://www.w3.org/2000/svg' className='icon' width='16' height='16' viewBox='0 0 16 16'>
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5'
                         />
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z'
                         />
                       </svg>
@@ -431,6 +432,19 @@ const MainPage: React.FC = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className='description opinions'>
+          <div className='description-title-wrapper'>
+            <span className='description-title'>Nasze opinie o projekcie</span>
+            <hr />
+          </div>
+          <div className='description-content'>
+            <div className='opinions-list' >
+              {Opinions.map((ex, index) => (
+                <Expectation key={index} author={""} content={ex} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -7,12 +7,17 @@ const Expectation: FC<IExpectation> = ({author, content}) => {
 
     return (
         <div className="expectation">
-            <div className='author-block'>
-                <span className="author">
-                    {author}
-                </span>
-                <span className="underline" />
-            </div>
+            { author ? 
+                (
+                <div className='author-block'>
+                    <span className="author">
+                        {author}
+                    </span>
+                    <span className="underline" />
+                </div>
+                )
+                : (<></>)
+            }
             <div className="content-container">
                 <div className="content">
                     {content}
