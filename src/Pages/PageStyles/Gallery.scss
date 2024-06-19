@@ -137,4 +137,12 @@
         .videos-gallery-container{
             grid-template-columns: 1fr;
         }
+
+.photos-gallery-content-container {
+    grid-template-columns: 1fr;
+
+    img {
+        max-width: 90vw;
+    }
+}
   }

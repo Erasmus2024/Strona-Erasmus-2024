@@ -28,16 +28,16 @@ const MainNavbar: React.FC = () => {
           <span className='navbar-logo-second-element'>Hiszpania</span>
         </div>
         <div className='navbar-menu'>
-          <a href='#top' className='navbar-menu-item'>
+          <a href='/Strona-Erasmus-2024#top' className='navbar-menu-item'>
             Strona główna
           </a>
-          <a href='#o-projekcie' className='navbar-menu-item'>
+          <a href='/Strona-Erasmus-2024#o-projekcie' className='navbar-menu-item'>
             O projekcie
           </a>
-          <a href='#lista-uczniow' className='navbar-menu-item'>
+          <a href='/Strona-Erasmus-2024#lista-uczniow' className='navbar-menu-item'>
             Lista uczesników
           </a>
-          <a href='/' className='navbar-menu-item'>
+          <a href='/Strona-Erasmus-2024/gallery' className='navbar-menu-item'>
             Galeria
           </a>
         </div>
