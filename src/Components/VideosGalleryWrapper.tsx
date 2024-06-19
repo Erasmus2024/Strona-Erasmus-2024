@@ -22,7 +22,7 @@ useEffect(() => {
 }, []);
 
     return (
-        <div className='videos-gallery-container'>
+        <div className='videos-gallery-container' style={{padding: '0 50px 0 50px', marginBottom: '100px'}}>
            {videoData.map((element) => {
             return <VideoDisplay key={element.code} authors={element.authors} code={element.code} />
            })}
