@@ -116,6 +116,12 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        max-width: 40vw;
+    }
 }
 
 .photos-gallery-error{
