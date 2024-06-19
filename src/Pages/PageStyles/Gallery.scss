@@ -127,3 +127,8 @@
     font-weight: bold;
     height: 100%;
 }
+@media only screen and (max-width: 1000px) {
+        .videos-gallery-container{
+            grid-template-columns: 1fr;
+        }
+  }

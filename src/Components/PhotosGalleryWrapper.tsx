@@ -6,7 +6,7 @@ const PhotosGalleryWrapper: FC = () => {
     const [selectedGallery, setSelectedGallery] = useState<string>("Szkolenie");
 
     return (
-        <div className="photos-gallery-container">
+        <div className="photos-gallery-container" style={{padding: '0 50px 0 50px', marginBottom: '100px' }}>
             <div className="gallery-picker">
                 <div className={`wrapper-container ${selectedGallery === "Szkolenie" ? "left-underline" : "right-underline"}`}>
                     <div className="gallery-pick" onClick={() => setSelectedGallery("Szkolenie")}>

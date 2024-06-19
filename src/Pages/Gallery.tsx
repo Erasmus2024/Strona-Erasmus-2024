@@ -3,12 +3,13 @@ import MainNavbar from '../Components/MainNavbar';
 import './PageStyles/Gallery.scss';
 import VideosGalleryWrapper from '../Components/VideosGalleryWrapper';
 import PhotosGalleryWrapper from '../Components/PhotosGalleryWrapper';
+import Footer from '../Components/Footer';
 
 const Gallery: React.FC = () => {
     const [actualChoice, setActualChoice] = useState<boolean>(false); // false - videos, true - photos
 
     return (
-        <div className='container' style={{padding: '0 50px 0 50px'}}>
+        <div className='container' >
             <MainNavbar />
             <div className="choose-videos-gallery-container">
                 <div className={`wrapper-container ${actualChoice ? 'right-underline' : 'left-underline'}`}>
@@ -31,6 +32,7 @@ const Gallery: React.FC = () => {
             ) : (
                 <VideosGalleryWrapper />
             )}
+            <Footer />
         </div>
     );
 };
