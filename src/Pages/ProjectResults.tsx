@@ -8,14 +8,10 @@ import VideosGalleryWrapper from "../Components/VideosGalleryWrapper";
 
 const ProjectResults: FC = () => {
     return(
-        <div className="container">
+        <div className="container" style={{marginTop: '70px'}}>
             <MainNavbar />
             <div className="content">
-                <div className="section-header">
-                    <span className="section-header-text">Filmy podsumowujące staż zawodowy</span>
-                    <hr />
-                </div>
-                <VideosGalleryWrapper />
+                
                 <br />
                 <div className="section-header">
                     <span className="section-header-text">Plakaty informacyjno-edukacyjne</span>

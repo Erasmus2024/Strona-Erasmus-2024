@@ -28,20 +28,20 @@ const MainNavbar: React.FC = () => {
           <span className='navbar-logo-second-element'>Hiszpania</span>
         </div>
         <div className='navbar-menu'>
-          <a href='/Strona-Erasmus-2024#top' className='navbar-menu-item'>
+          <a href='/#top' className='navbar-menu-item'>
             Strona główna
           </a>
-          <a href='/Strona-Erasmus-2024#o-projekcie' className='navbar-menu-item'>
+          <a href='/#o-projekcie' className='navbar-menu-item'>
             O projekcie
           </a>
-          <a href='/Strona-Erasmus-2024#lista-uczniow' className='navbar-menu-item'>
+          <a href='/#lista-uczniow' className='navbar-menu-item'>
             Lista uczesników
           </a>
-          <a href='/Strona-Erasmus-2024/gallery' className='navbar-menu-item'>
+          <a href='/gallery' className='navbar-menu-item'>
             Galeria
           </a>
-          <a href='/Strona-Erasmus-2024/project-results' className='navbar-menu-item'>
-            Rezultaty projektu
+          <a href='/posters' className='navbar-menu-item'>
+            Plakaty
           </a>
         </div>
         <div className='show-hide-navbar' onClick={() => expandNavbar()}>

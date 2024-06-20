@@ -9,9 +9,9 @@ function App() {
     <div className='App'>
       <BrowserRouter>
       <Routes>
-        <Route path='/Strona-Erasmus-2024' element={<MainPage />} />
-        <Route path='/Strona-Erasmus-2024/gallery/:section?' element={<VideosGallery />} />
-        <Route path='/Strona-Erasmus-2024/project-results' element={<ProjectResults />} />
+        <Route path='/' element={<MainPage />} />
+        <Route path='/gallery/:section?' element={<VideosGallery />} />
+        <Route path='/posters' element={<ProjectResults />} />
       </Routes>
       </BrowserRouter>
      
