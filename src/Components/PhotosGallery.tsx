@@ -8,13 +8,9 @@ const PhotosGallery: FC<IPhotosGallery> = ({gallery}) => {
     const [images, setImages] = useState<any[]>([]);
 
     useEffect(() => {
-        console.log(img_context);
-
         const img_list = img_context.keys().filter((img: string) => img.includes(gallery));
-        console.log(img_list);
         setImages(img_list.map((img: string) => img_context(img)));
-        console.log(images);
-    }, [gallery, img_context]);
+    }, [gallery, images]);
 
     return (
         <>

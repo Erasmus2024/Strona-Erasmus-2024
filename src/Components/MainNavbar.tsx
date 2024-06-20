@@ -40,6 +40,9 @@ const MainNavbar: React.FC = () => {
           <a href='/Strona-Erasmus-2024/gallery' className='navbar-menu-item'>
             Galeria
           </a>
+          <a href='/Strona-Erasmus-2024/project-results' className='navbar-menu-item'>
+            Rezultaty projektu
+          </a>
         </div>
         <div className='show-hide-navbar' onClick={() => expandNavbar()}>
         <div className='first-line'></div>
