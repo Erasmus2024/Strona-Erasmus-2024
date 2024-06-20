@@ -22,12 +22,8 @@ const ProjectResults: FC = () => {
                     <hr />
                 </div>
                 <div className="posters-section">
-                    <a href="../../public/files/plakat-obywatelski.pdf" className="poster-button" target="_blank">
-                        <span className="label no-external">Plakat Obywatelski</span>
-                    </a>
-                    <a href="../../public/files/Ecology in Málaga.pdf" className="poster-button" target="_blank">
-                        <span className="label no-external">Ekologia w Maladze</span>
-                    </a>
+                    <embed className="poster-frame" type="application/pdf" title="Plakat Obywatelski" src="/Strona-Erasmus-2024/files/plakat-obywatelski.pdf" />
+                    <embed className="poster-frame" type="application/pdf" title="Ekologia w Maladze" src="/Strona-Erasmus-2024/files/Ecology in Málaga.pdf" />
                 </div>
             </div>
             <Footer />
