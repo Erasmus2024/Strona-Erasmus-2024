@@ -11,7 +11,7 @@ const PhotosGalleryWrapper: FC<IPhotosGalleryWrapper> = ({section}) => {
         {
             setSelectedGallery(section);
         }
-    }, [])
+    }, [section])
 
     return (
         <div className="photos-gallery-container" style={{padding: '0 50px 0 50px', marginBottom: '100px' }}>

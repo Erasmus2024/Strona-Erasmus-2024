@@ -3,7 +3,6 @@ import MainNavbar from "../Components/MainNavbar";
 import Footer from "../Components/Footer";
 import "./PageStyles/Gallery.scss";
 import "./PageStyles/ProjectResults.scss"
-import VideosGalleryWrapper from "../Components/VideosGalleryWrapper";
 
 
 const ProjectResults: FC = () => {
